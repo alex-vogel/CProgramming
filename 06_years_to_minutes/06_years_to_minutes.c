@@ -7,7 +7,7 @@ int main(){
 
     puts("Please enter your age in years: ");
     scanf("%d",&age_in_years);
-    printf("\"%d\" years is \"%d\" minutes\n", age_in_years, age_in_years * 365 * 24 * 60);
+    printf("\"%d\" years is \"%d\" minutes\n", age_in_years, age_in_years * 365 * 24 * 60); //remember that \" is another escape sequence
     
     return 0;
 }
