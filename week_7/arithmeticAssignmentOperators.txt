@@ -1,0 +1,29 @@
+Instead of doing an iteration statement like
+
+C = C + 1, you can write this as C += 1;.
+
+This format can be replicated for +, -, /, *, and %.
+
+
+Ex: g /= 5; is the same as g = g / 5;
+
+
+
+If a variable c is to be incremented by 1, the increment operator ++ can be used instead of c=c+1
+
+If a variable is decremented by 1, use --
+
+
+
+You can also use operators such as ++a or a++, the difference being the order of operations.
+
+for ++a, you incrent first, you set a to the incrememented value.
+
+for a++, you set b to a, then increment for a only.
+
+
+You can think of ++ being "and then increment"
+
+so if you print ++c, you increment and then print c (the newly incrememnted one) [post]
+if you print c++, you will print c as it was, but then the value of c is c+1   [pre]
+
