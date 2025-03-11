@@ -1,0 +1,5 @@
+Nested loops: A loop can be nested inside another loop
+
+Nested loops consist of an outer loop and one or more inner loops.
+
+Each time the outer loop is repeated, the inner loops are reentered and started anew
