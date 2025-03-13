@@ -1,0 +1,25 @@
+Arrays allow you to hold many different values.
+
+For instance: If you have 40 grades under variables grade1, grade2, grade3... you could create an array called "grades" which holds all of them
+
+Array index's begin at 0.
+
+The first item in the index is 0, and the last item is n(number of items in array) - 1
+
+To create:
+<data type> name[size];
+
+
+Create an array of integers called "grades"
+int grades[10];
+^ This is an uninitialized array, its a list full of garbage random values.
+
+to access a place inside of an array, you reference it with
+grades[2] (accesses the third grade)
+
+
+
+
+-arrays can only hold one type of data type.
+
+-The items in an array are all held next to eachother in the memory

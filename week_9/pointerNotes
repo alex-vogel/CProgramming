@@ -1,0 +1,43 @@
+-Pointers are variables that store memory addresses
+
+-To declare a pointer the format is dataType * <name> = address    If the thing in the address is an integer use int, if double use lf
+
+-if you have nowhere to point to yet, make the address NULL
+
+
+- The dereferencing operator "*" returns the value of the object to which it Pointers
+"printf("%d", *yPtr);" will print what integer in the place where yPtr points
+
+
+yPtr = xPtr;  this changes the address in yPTr to the address in xPtr, meaning that "yptr will now point to x"
+
+
+dereferencing operator is how you go into the box the pointer points to, without it youre just talking about the addresses.
+
+
+
+
+Pass by refernece: Many functions require the capability to modify variables in the caller or to pass a pointer to a large data object to avoid the ocerhead of passing the
+object by value.
+
+To do this, your function parameters should have pointer(s) as a parameter(s), and your call of the function should send the addresses of the varaibles you want to edit.
+
+
+Swapping variables (think you have two glasses, one with milk one with water, and you want to switch their cups)
+
+1st you need to create an "empty cup" (temporary variable), then put the value of milk (*milk) into the temp.
+2. then you can put *milk = *water, now where milk was there is water.
+3. Then make where water was (*water) into temp *water = temp
+
+
+
+So why do we use pointers?
+- Dynamic memory allocation (allocate new memory at runtime)
+-Pointrs to void (can hold address of any type and can be typecasted to any type)
+- Pointers to dunctions (pass a function to another function, create an array of functions)
+- Arrays of pointers (to store strings efficiently)
+- Self referential data structures (Linked lists, trees)
+- Hardware or low-Leevel Programming (Access memory-mapped hardware addressess in low level programming)
+- File processing (read from input files and write to output files using file pointers)
+
+
