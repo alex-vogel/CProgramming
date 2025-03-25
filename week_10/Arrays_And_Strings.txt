@@ -1,0 +1,28 @@
+Notes:
+
+Recap:
+
+*To create an array its dataType name[size];
+*Array index's begin at 0 in c
+*to reference a point in the array do name[index]
+
+if you want to put the number "5" in the first index of an array called "numbers" it would look like numbers[0] = 5;
+
+
+*C has no array bounds checking to prevent the program from referring to an element that does not exist.
+*Be careful that the index never goes below 0 or greater than the total number of index
+
+*Symbolic constants can be used with arrays for convinience because if you need to make a change you can just edit the constant and the compiler will fill it in later
+#define NAME number
+#define SIZE 500 //Defines a symbolic constant SIZE which will later be replaced by the compiler to 500 wherever it shows up in the code.
+
+
+*Define and initialize an array int n[5] = {24, 48, 192, -49, 4};
+
+*If you only initialize a few of the index's, everything else will be 0
+    therefore to initalize an array full of 0 you would do in n[5] = {0};
+
+*If you do int n[] = {3, 2, 1, 4, 5};
+it will calculate the size itself
+
+if you want to ensure that an array is not edited, make it a const ex: const int a[4] = {0,1,2,3};
