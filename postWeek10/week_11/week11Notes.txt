@@ -1,0 +1,26 @@
+Remember: 
+
+Constant arrays are arrays which can't be modified. This is important because by nature arrays are always sent to functions by referencing the memory, meaning they
+can always be modified by functions, which we probably dont always want.
+
+Declaring:
+void print(const int *a, int size){
+    a[0] = 0; //error
+}
+
+
+Initializer list; manually including data into an array.
+int arrayName[size] = {x, y, z, ...};
+
+Strings: arrays full of char's
+char([]) = "Hello".
+
+Creates an array with the amount of characters in the string + 1, the last element is a null character which signals the end of the string.
+
+char color[] = "blue";
+const char *colorPtr = "Blue";
+
+
+Be careful to allocate sufficient space in a character array -> you NEED the null character
+-Printing a "string" that does not contain a terminating null character is an error
+-If a string is longer than the character array in which it is to be stored, characters beyond the end of the array will overwrite data in memory following the array.
