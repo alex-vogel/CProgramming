@@ -1,0 +1,49 @@
+remember:
+
+fgets(str,size-1,sddin); <--Gets input and creates a string
+
+str[strlen(str) - 1] = '\0';
+
+--Remember that scanf doesnt work if its more than one word.
+
+could also do a getchar manual version of getting a string
+
+    while (i < SIZE - 1 && c != '\n'){
+        str[i] = c;
+        i++;
+        c = getchar();
+    }
+    str[i] = '\0';
+
+
+
+    Note: strcpy(char *s1, const char *s2);  Copies s2 into s1
+
+    the function strcat appends its second argument ( a string) to its first argument (a character array containing a string)
+    -The first character of the second argument replaces the null ('\0') that terminates the string in the first arrgument
+         --You must ensure that the array used to store the firsy string is large enough to hold it and the second string.
+
+
+strcmp [string compare]
+
+strcmp(s1, s2)   [s1 and s2 are strings]
+returns 0 if they are the same,
+>0 if s1 is first in the dictionary
+<0 if s1 is second in the dictionary
+
+---------------------------------------------------------------------------------
+Multidinmensional Arrays 
+    *Multidimensional arrays can represent tables of values consisting of information arranged in rows and columns
+    *To identify a particular table element, we must specify two indices:
+        -The first(by convention) identifies the element's rows
+
+    In two dimensional arrays there are rows and columns
+
+    int a[5][10]  Creates array with 5 rows, 10 columns
+
+
+    You can initialize a two dimensional array like this:
+
+    int b[2][2] = {{1,2}, {3,4}}   which looks like    12
+                                                       34
+
