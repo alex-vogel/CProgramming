@@ -1,0 +1,29 @@
+-Opening a file returns a pointer to a FILE structure
+-A program refers to each open file with a seperate FILE pointer
+
+-fopen opens a file and establishes "a line of communication with it"
+ 2 arguments:
+    a filename(which can include path information leading to file location)
+    -a file open mode (r,w,a,r+,w+, and others) [read, write, ...]
+
+-If a file pointer fopen returns is NULL, the file couldn't be open
+
+-fprintf recieves a FILE pointer and writes the data into that file
+
+-fclose recieves the FILE pointer, if the file isnt closed the OS will likely close the file when the program is over but you should close files when theyre not needed
+
+-fscanf is equivelent to scanf but recieves a FILE pointer as an argument to decide which file should be read from
+
+
+FILE = *file; //declare a file
+file = fopen("out.txt", "w");
+fclose(file);
+fprint(file, "%s", "Hello");
+
+
+
+FILE *f = fopen("path of file", "w") opens a file in write mode.
+
+
+
+instead of fscanf we can use fgets("place we want to save it to", "maximum number of characters", file)
